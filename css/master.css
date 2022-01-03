@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +7,8 @@
 }
 
 body{
-    background-color: antiquewhite;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*=========================================================*/
@@ -29,12 +32,17 @@ nav{
     padding: 2rem 0;
     margin-left: 2rem;
     text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
 }
 
 #navbar-links{
     display: flex;
     flex-direction: column;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
     position: absolute;
     z-index: -1;
     top: calc(-6*3rem);
@@ -63,12 +71,72 @@ nav{
 }
 
 
+@media screen and (min-width: 768px) {
+
+    #navbar-toggler{
+        display: none;
+    }
+
+    #navbar-links{
+        flex-direction: row;
+        justify-content: flex-end;
+        position: unset;
+        z-index: unset;
+        width: unset;
+        margin-right: 2rem;
+        gap: 2rem;
+    }
+    
+
+}
+
 
 /*=========================================================*/
 /*Header*/
 /*=========================================================*/
 
-h1{
-    text-align: center;
-    margin-top: 10rem;
+#hero{
+    height: calc(100vh - 5.2rem);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+#hero h1{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    padding: 1rem 0;
+}
+
+#hero h2{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #hero h1{
+        font-size: 4rem;
+        letter-spacing: 0.4rem;
+        padding: 1rem 0;
+    }
+    
+    #hero h2{
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    #hero h1{
+        font-size: 5rem;
+        letter-spacing: 0.5rem;
+        padding: 1rem 0;
+    }
+    
+    #hero h2{
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+    }
 }

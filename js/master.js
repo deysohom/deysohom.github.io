@@ -5,9 +5,7 @@ let navbar = document.getElementById("navbar-links");
 
 function toggleFunction() {
 
-    let x = navbar.style.top;
-
-    if (x=='100%'){
+    if (navbar.style.top=='100%'){
         navbar.style.top = 'calc(-6*3rem)';
     }
     else{
