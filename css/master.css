@@ -40,7 +40,7 @@ nav{
     top: calc(-6*3rem);
     width: 100%;
     background-color: black;
-    transition: top 1s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 
 #navbar-links li{
